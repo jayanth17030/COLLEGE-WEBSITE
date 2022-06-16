@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+:root{
+    --main-color:#be9c79;
+    --black:#333;
+    --white:#fff;
+    --light-color:#666;
+    --border:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.5)
+
+    
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+ 
+}
+*::selection{
+    background-color: var(--main-color);
+    color:var(--white);
+}
+
+::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+section{
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading img{
+    height: 8rem;
+    margin-bottom: 1rem;
+}
+
+.heading h3{
+    font-size: 4rem;
+    color: var(--black);
+    font-family: 'Righteous', cursive;
+    
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+
+}
+
+.btn:hover{
+    background-color: var(--black);
+}
+
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+}
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.5rem 2rem;
+}
+.header .flex .logo img{
+    height: 4.5rem;
+}
+.header .flex .navbar a{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+.header .flex .navbar a:hover{
+    text-decoration: underline;
+    color: var(--main-color);
+
+}
+#menu-btn{
+    display: none;
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.home-bg{
+    background:linear-gradient(90deg, var(--white), transparent 70%), url(https://assets.thehansindia.com/h-upload/feeds/2019/03/23/155967-srkr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home-bg .home{
+    min-height: 70rem;
+    display: flex;
+    align-items: center;
+}
+
+.home-bg .home .content h3{
+    font-size: 6rem;
+    color: var(--black);
+    font-family: 'Righteous';
+
+}
+
+.home-bg .home .content p{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--black);
+    line-height: 2;
+}
+
+.about .image img{
+    width: 100%;
+}
+.para{
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+
+.foot{
+    font-size: 3rem;
+    margin: 1.52rem;
+}
+
+
+.facility .box-container{
+    display: grid;
+    margin: 50px;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.box3 {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.box4 {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    margin-left: 15mm;
+    text-align: center;
+}
+.ptag1{
+    margin-left: -25px;
+    text-align: center;  
+}
+.ptag2{
+    margin-left: -35px;
+    text-align: center;    
+}
+.head3{
+    margin-left: -15mm;
+}
+
+.branchImg{
+    width: 300px;
+}
+
+#cseimg{
+    margin-top: 70px;
+
+}
+#eceimg{
+    margin-top: 40px;
+}
+#eeeimg{
+    margin-top: 15px;
+}
+#itimg{
+    margin-top: 90px;
+}
+
+.box-container1{
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 120px;
+    margin-top: 80px;
+}
+
+.box-container2{
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 120px;
+    margin-top: 80px;
+    
+}
+.branches .box-container1 .box-container2 .box{
+    text-align: center;
+
+}
+.branches .box-container1 .box-container2 .box img{
+
+    margin-bottom: 1rem;
+
+}
+.branches .box-container1 .box-container2 .box h3{
+    font-size: 2rem;
+    color: var(--black);
+
+
+}
+
+.civil{
+    margin-top: 40px;
+    text-align: center;
+}
+.cse{
+    margin-top: 40px;
+    margin-left: 30px;
+    text-align: center;
+}
+.ece{
+    margin-top: 40px;
+    text-align: center;
+}
+.eee{
+    margin: 40px;
+    text-align: center;
+}
+.mech{
+    margin-top: 40px;
+    text-align: center;
+}
+.it{
+    margin-top: 40px;
+    text-align: center;
+}
+.galImg{
+    width: 384px;
+}
+.grpImg{
+    width: 100%;
+}
+.TandPProfile{
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.placeBox p{
+    font-size: 1.5rem;
+}
+/* .Rec{
+    align-items: center;
+} */
+.RECRUITERS{
+    width: 80%;
+    margin-left: 150px;
+}
+.contactImg{
+    width: 600px;
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.contact .row .image{
+    flex: 1 1 50rem;
+}
+.contact.row .image img{
+    width: 100%;
+}
+.contact .row form{
+    flex: 1 1 30rem;
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+}
+.contact .row form h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+.contact .row form .box{
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    border: var(--border);
+    margin: 1rem 0;
+
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+footer .box-container .box{
+    text-align: center;
+}
+
+.footer .box-container .box i{
+    font-size: 2.5rem;
+    line-height: 6rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: var(--white);
+    margin-bottom: 1rem;
+    padding-left: 1.8rem;
+    margin-left: 2rem;
+    
+}
+.footer .box-container .box h3{
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.footer .box-container .box p{
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+.footer .credit{
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: var(--border);
+    font-size: 2rem;
+    color: var(--black);
+
+}
+.footer .credit span{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+        transition: .2s linear;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
+
+    .header .flex .navbar{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background-color: var(--white);
+        border-top: var(--border);
+        border-bottom: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+    }
+    .header .flex .navbar .active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .flex .navbar a{
+        display: block;
+        margin: 2rem;
+
+    }
+    .home-bg{
+        background-position: left;
+    }
+    .home-bg .home{
+        justify-content: center;
+    }
+    .home-bg .home .content h3{
+        font-size: 4rem;
+    }
+    .about .content{
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+}
